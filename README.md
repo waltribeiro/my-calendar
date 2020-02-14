@@ -19,4 +19,4 @@ I have other apps over at my [Github](http://git.waltrib.com)
 
 
 ## Screenshot
-<img src="Assets/05-third-party-apis-homework-demo.gif">
+<img src="img/05-third-party-apis-homework-demo.gif">
