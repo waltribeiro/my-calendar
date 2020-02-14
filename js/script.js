@@ -2,6 +2,19 @@
 // 2.) why would i console log vs just using quokka or wallaby?
 // 3.) how often do you step through your code using breakpoints in chrome's inspector
 
+$("#hour-9 .eventDefault").val(localStorage.getItem("hour-9")); // assigning Value to an element (the <textarea>)
+$("#hour-10 .eventDefault").val(localStorage.getItem("hour-10")); // assigning Value to an element (the <textarea>)
+$("#hour-11 .eventDefault").val(localStorage.getItem("hour-11")); // assigning Value to an element (the <textarea>)
+$("#hour-12 .eventDefault").val(localStorage.getItem("hour-12")); // assigning Value to an element (the <textarea>)
+$("#hour-13 .eventDefault").val(localStorage.getItem("hour-13")); // assigning Value to an element (the <textarea>)
+$("#hour-14 .eventDefault").val(localStorage.getItem("hour-14")); // assigning Value to an element (the <textarea>)
+$("#hour-15 .eventDefault").val(localStorage.getItem("hour-15")); // assigning Value to an element (the <textarea>)
+$("#hour-16 .eventDefault").val(localStorage.getItem("hour-16")); // assigning Value to an element (the <textarea>)
+$("#hour-17 .eventDefault").val(localStorage.getItem("hour-17")); // assigning Value to an element (the <textarea>)
+
+$("#currentDay").text(moment().format("ddd MMM D h:mm:ss a")); // ================= why is this not updating every seconds?
+
+
 var timeArr = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"]
 var idContainer = $("#container"); // links under the header in HTML 
 var id = 9;
@@ -44,17 +57,6 @@ $(document).on("click", ".far", function() {
     localStorage.setItem(time, typedValue);
 })
 
-$("#hour-9 .eventDefault").val(localStorage.getItem("hour-9")); // assigning Value to an element (the <textarea>)
-$("#hour-10 .eventDefault").val(localStorage.getItem("hour-10")); // assigning Value to an element (the <textarea>)
-$("#hour-11 .eventDefault").val(localStorage.getItem("hour-11")); // assigning Value to an element (the <textarea>)
-$("#hour-12 .eventDefault").val(localStorage.getItem("hour-12")); // assigning Value to an element (the <textarea>)
-$("#hour-13 .eventDefault").val(localStorage.getItem("hour-13")); // assigning Value to an element (the <textarea>)
-$("#hour-14 .eventDefault").val(localStorage.getItem("hour-14")); // assigning Value to an element (the <textarea>)
-$("#hour-15 .eventDefault").val(localStorage.getItem("hour-15")); // assigning Value to an element (the <textarea>)
-$("#hour-16 .eventDefault").val(localStorage.getItem("hour-16")); // assigning Value to an element (the <textarea>)
-$("#hour-17 .eventDefault").val(localStorage.getItem("hour-17")); // assigning Value to an element (the <textarea>)
-
-$("#currentDay").text(moment().format("ddd MMM D h:mm:ss a")); // ================= why is this not updating every seconds?
 
 function confirmUser(){
     var attemptsTotal = 1;
@@ -69,4 +71,4 @@ function confirmUser(){
 
 
 // create conditional if we're past a certain point
-// change the color use bootstrap <style>
+// change the color using bootstrap <style>
