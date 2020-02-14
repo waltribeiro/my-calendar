@@ -24,6 +24,10 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+.textWhite{
+  color: white;
+}
+
 .description{
   white-space: pre-wrap;
 }
@@ -35,7 +39,7 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  height: 90px;
   border-top: 1px solid white;;
 }
 
@@ -72,10 +76,12 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
-.Time {
+
+.time {
   background-color: rgb(233, 231, 231);
   border: black;
 }
+
 .eventDefault {
   background-color: rgb(96, 87, 138);
   border: black;
@@ -100,7 +106,7 @@ textarea{
   text-align: center;
 }
 
-.Save {
+.save {
   background-color: rgb(61, 207, 218);
   border: black;
 }
