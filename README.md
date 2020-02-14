@@ -6,7 +6,7 @@ Simply type in your note and then click the 💾 icon. The note is saved to stor
 
 
 ## Links
-[***CLICK HERE TO BEGIN PLAYING***](https://waltribeiro.github.io/my-calendar/)
+[***CLICK HERE FOR THE APP***](https://waltribeiro.github.io/my-calendar/)
 
 ## Contact
 If you like this app and want me to build one for you, then contact me at w@waltrib.com
@@ -19,4 +19,4 @@ I have other apps over at my [Github](http://git.waltrib.com)
 
 
 ## Screenshot
-<img src="img/05-third-party-apis-homework-demo.gif">
+<img src="img/screenshot-my-calendar.png">
