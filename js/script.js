@@ -45,14 +45,17 @@ $(document).on("click", ".far", function() {
 })
 
 
+var attemptsTotal = 1;
+
 function confirmUser(){
-    var attemptsTotal = 1;
     var ask = prompt("Please type password to login");
-    if(ask == "waltPassword"){
+    if(ask === "waltPassword"){
       alert("you are logged in");
-     } else {
+     } else if(ask !== "waltPassword" && attemptsTotal < 5) {
         alert(attemptsTotal + " of 5 attempts left");
         attemptsTotal++
+     } else {
+         alert("goodbye")
      }
 }
 
