@@ -2,19 +2,6 @@
 // 2.) why would i console log vs just using quokka or wallaby?
 // 3.) how often do you step through your code using breakpoints in chrome's inspector
 
-$("#hour-9 .eventDefault").val(localStorage.getItem("hour-9")); // assigning Value to an element (the <textarea>)
-$("#hour-10 .eventDefault").val(localStorage.getItem("hour-10")); // assigning Value to an element (the <textarea>)
-$("#hour-11 .eventDefault").val(localStorage.getItem("hour-11")); // assigning Value to an element (the <textarea>)
-$("#hour-12 .eventDefault").val(localStorage.getItem("hour-12")); // assigning Value to an element (the <textarea>)
-$("#hour-13 .eventDefault").val(localStorage.getItem("hour-13")); // assigning Value to an element (the <textarea>)
-$("#hour-14 .eventDefault").val(localStorage.getItem("hour-14")); // assigning Value to an element (the <textarea>)
-$("#hour-15 .eventDefault").val(localStorage.getItem("hour-15")); // assigning Value to an element (the <textarea>)
-$("#hour-16 .eventDefault").val(localStorage.getItem("hour-16")); // assigning Value to an element (the <textarea>)
-$("#hour-17 .eventDefault").val(localStorage.getItem("hour-17")); // assigning Value to an element (the <textarea>)
-
-$("#currentDay").text(moment().format("ddd MMM D h:mm:ss a")); // ================= why is this not updating every seconds?
-
-
 var timeArr = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"]
 var idContainer = $("#container"); // links under the header in HTML 
 var id = 9;
@@ -32,7 +19,7 @@ for (i = 0; i < timeArr.length; i++) { // this is the time for the first column
     var newRowSaveDiv = $("<div>");
 
     newRow.attr("class", "row"); // =================== I still don't understand this line perfectly
-    newRow.attr("id", "hour-" + idStr); // ====================== can I combine this with line 20?
+    newRow.attr("id", "hour-" + idStr); // ====================== can I combine this with line 21?
     newRowTimeDiv.attr("class", "col-1 time text-center");
     newRowEventDiv.attr("class", "col-10 eventDefault"); // =========== why is this 12 column bootstrap wrapping?
     newRowSaveDiv.attr("class", "col-1 save");
@@ -68,6 +55,18 @@ function confirmUser(){
         attemptsTotal++
      }
 }
+
+$("#hour-9 .eventDefault").val(localStorage.getItem("hour-9")); // assigning Value to an element (the <textarea>)
+$("#hour-10 .eventDefault").val(localStorage.getItem("hour-10")); // assigning Value to an element (the <textarea>)
+$("#hour-11 .eventDefault").val(localStorage.getItem("hour-11")); // assigning Value to an element (the <textarea>)
+$("#hour-12 .eventDefault").val(localStorage.getItem("hour-12")); // assigning Value to an element (the <textarea>)
+$("#hour-13 .eventDefault").val(localStorage.getItem("hour-13")); // assigning Value to an element (the <textarea>)
+$("#hour-14 .eventDefault").val(localStorage.getItem("hour-14")); // assigning Value to an element (the <textarea>)
+$("#hour-15 .eventDefault").val(localStorage.getItem("hour-15")); // assigning Value to an element (the <textarea>)
+$("#hour-16 .eventDefault").val(localStorage.getItem("hour-16")); // assigning Value to an element (the <textarea>)
+$("#hour-17 .eventDefault").val(localStorage.getItem("hour-17")); // assigning Value to an element (the <textarea>)
+
+$("#currentDay").text(moment().format("ddd MMM D h:mm:ss a")); // ================= why is this not updating every seconds?
 
 
 // create conditional if we're past a certain point
