@@ -15,7 +15,7 @@ for (i = 0; i < timeArr.length; i++) { // this is the time for the first column
     newRow.attr("id", "hour-" + idStr);
     newRowTimeDiv.attr("class", "col-1 time text-center");
     newRowEventDiv.attr("class", "col-10 eventDefault event");
-    newRowSaveDiv.attr("class", "col-1 save");
+    newRowSaveDiv.attr("class", "col-1 save text-center");
 
     newRowTimeDiv.text(timeArr[i]);
     newRowEventDiv.text("");
@@ -39,13 +39,13 @@ for (i = 0; i < timeArr.length; i++) { // this is the time for the first column
         newRowEventDiv.addClass("eventFuture")
     }
 
-    newRowTimeDiv.text(timeArr[i]);
+    newRowTimeDiv.text(timeArr[i] + ":00"); // add AM PM here
 
     idContainer.append(newRow);
     newRow.append(newRowTimeDiv, newRowEventDiv, newRowSaveDiv);
     var newIcon = $("<button>");
 
-    newIcon.attr("class", "fas fa-save");
+    newIcon.attr("class", "fas fa-save fa-2x");
     newRowSaveDiv.append(newIcon);
     id++;
 }
