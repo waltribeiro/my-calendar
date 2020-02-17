@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 textarea{
@@ -39,8 +39,8 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  height: 60px;
-  border-top: 1px solid white;;
+  height: 80px;
+  border-top: 2px solid white;;
 }
 
 .hour {
