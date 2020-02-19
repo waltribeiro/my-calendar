@@ -230,7 +230,21 @@ textarea{
   
   vertical-align:middle;
   height:100%;
-
-
 }
+
+.centerTag {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  button::before{
+    font-size: 20px;
+  }
+}
+
+
+
 
