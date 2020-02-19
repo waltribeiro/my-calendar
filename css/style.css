@@ -233,7 +233,6 @@ textarea{
 }
 
 .centerTag {
-  width: 80%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -242,6 +241,9 @@ textarea{
 @media (max-width: 800px) {
   button::before{
     font-size: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
   }
 }
 
